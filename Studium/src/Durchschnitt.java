@@ -1,18 +1,16 @@
-
 public class Durchschnitt {
-	
-	public static void main(String[] args) {
+
+	public static void main(String args[]) {
 		double summe = 0.0;
 		int anzahl = 0;
-		
-		while (StdIn.isEmpty() == false) {
+
+		while ( !StdIn.isEmpty() ) {
 			double wert = StdIn.readDouble();
-			summe = summe + wert;
+			summe += wert;
+
 			anzahl++;
 		}
-		
-		System.out.println("Durchschnitt " + summe / anzahl);
-		
-	}
 
+		System.out.println( summe / anzahl );
+	}
 }
